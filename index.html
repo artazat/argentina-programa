@@ -15,14 +15,14 @@
     <title>Document</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
+<body class="grid-container">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="nombre-sergio navbar-brand" href="#">Sergio Gomez</a>
             <button style="transition: all;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="icono-nav"><i class="bi bi-list"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
@@ -33,45 +33,119 @@
                         <a class="nav-link" href="#formacion">Formación</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Galería</a>
+                        <a class="nav-link" href="#galeria">Galería</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="container">
-        <section class="row">
-            <img class="sergio-img col-xs-6" src="./img/sergio.jpg" alt="">
-            <div class="info-principal col-xs-6">
-                <h1>Sergio Gomez</h1>
-                <h2>|Arquitecto|</h2>
-                <div class="info-con-iconos">
-                    <p><i class="bi bi-globe"></i> | Córdoba Capital, Argentina.</p>
-                    <p><i class="bi bi-geo-alt"></i> | Deán Funes 3006.</p>
-                    <p><i class="bi bi-balloon"></i> | 14/03/1997</p>
-                    <p><i class="bi bi-heart"></i> | Soltero</p>
-                    <p><i class="bi bi-envelope-at"></i> | gomezsergio@gmail.com</p>
-                    <p><i class="bi bi-telephone"></i> | 351 927 1345</p>
+    <main class="container-fluid">
+        <section class="seccion1 row">
+            <div class="div-sergioimg col-xxl-6 col-xs-6">
+                <img class="sergio-img" src="./img/sergio.jpg" alt="">
+            </div>
+            <div class="info-principal col-xxl-6 col-xs-6">
+                <div class="info-div">
+                    <h1>Sergio Gomez</h1>
+                    <h2>|Arquitecto|</h2>
+                    <div class="info-con-iconos">
+                        <p><i class="iconos-info bi bi-globe"></i> | Córdoba Capital, Argentina.</p>
+                        <p><i class="iconos-info bi bi-geo-alt"></i> | Deán Funes 3006.</p>
+                        <p><i class="iconos-info bi bi-balloon"></i> | 14/03/1993</p>
+                        <p><i class="iconos-info bi bi-heart"></i> | Soltero</p>
+                        <p><i class="iconos-info bi bi-envelope-at"></i> | gomezsergio@gmail.com</p>
+                        <p><i class="iconos-info bi bi-telephone"></i> | 351 927 1345</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="sobre-mi container row" id="sobre-mi">
-            <div class="col-xs-6">
+        <section class="sobre-mi row" id="sobre-mi">
+            <div class="col-xxl-12 col-xs-6">
                 <h3>Sobre mi</h3>
                 <p>Desde corta edad comencé a disfrutar de los trabajos manuales, el orden y, con ello, el arte. No fue sorpresa para mi entorno que eligiera la arquitectura como carrera, ya que consideran, al igual que yo, en que poseo una notoria habilidad en aquellos ámbitos.</p>
                 <p>En conjunto con lo dicho anteriormente, también me apasiona estar rodeado de otras personas que, como yo, desean construir un futuro mejor, en base al esfuerzo y la pasión.</p>
                 <p>Es por ello que, desde mi punto de vista, trabajar en equipo es sin dudas una de las tareas más enriquecedoras. Tener colegas con los cuales poder crear un nuevo proyecto en conjunto es siempre increíble. Sin duda alguna, el progreso tanto personal como grupal, junto a un trabajo bien hecho, siempre será primordial para mi.</p>
             </div>
         </section>
-        <section class="formacion row" id="formacion">
-            <h4>Formación</h4>
-            
+        <section class="formacion container-xs" id="formacion">
+            <div>
+                <h4>Formación</h4>
+                <div class="años row">
+                    <div class="año-uno col-xxl-4 col-xs-6">
+                        <p class="los-años">2005 - 2011</p>
+                        <p class="parrafo-años">Estudio secundario en el instituto preuniversitario Colegio Nacional de Monserrat</p>
+                    </div>
+                    <div class="año-dos col-xxl-4 col-xs-6">
+                        <p class="los-años">2012 - 2020</p>
+                        <p class="parrafo-años">Estudio en la Facultad de arquitectura, Urbanismo y Diseño (FAUD - UNC) en la carrera de arquitectura</p>
+                    </div>
+                    <div class="año-tres col-xxl-4 col-xs-6">
+                        <p class="los-años">2021 - 2023 (Actualidad)</p>
+                        <p class="parrafo-años">Trabajo en BZ Arquitectura y Diseño</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="galeria" id="galeria">
+            <h5 class="container">Galería</h5>
+            <div class="imagenes-galeria container">
+                <div class="row">
+                    <img src="./img/plano4.jpg" alt="" class="diseños-galeria col-xxl-6">
+                    <img src="./img/plano5.jpg" alt="" class="diseños-galeria col-xxl-6">
+                </div>
+                <div class="row">
+                    <img src="./img/plano3.jpg" alt="" class="diseños-galeria col-xxl-6">
+                    <img src="./img/plano2.jpg" alt="" class="diseños-galeria col-xxl-6">
+                </div>
+                <div class="row">                    
+                    <img src="./img/plano1.webp" alt="" class="diseños-galeria col-xxl-6">
+                    <img src="./img/plano6.webp" alt="" class="diseños-galeria col-xxl-6">
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <h6>Contacto</h6>
+            <div class="row">
+                <div class="info-contacto col-xxl-6">
+                    <p><i class="iconos-contacto bi bi-envelope-at"></i> | gomezsergio@gmail.com</p>
+                    <p><i class="iconos-contacto bi bi-telephone"></i> | 351 927 1345</p>
+                    <div class="links-contacto">
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="instagram bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="formulario col-xxl-6">
+                    <form>
+                        <div class="inputs row">
+                            <div class="input-nombre col-xxl-4">
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" name="nombre" required/>
+                            </div>
+                            <div class="input-email col-xxl-4"> 
+                                <label for="email">Correo electronico</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="textarea col-xxl-8">
+                                <label for="textarea">Asunto</label>
+                                <textarea name="textarea" cols="2" rows="7" required></textarea>
+                                <div class="botones-form">
+                                    <button type="reset" class="reset">Restablecer</button>
+                                    <button type="submit" class="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-
+    <footer>
+        <p>©2023 - Developed by Nicolás Artaza</p>
+    </footer>
     <!-- BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>

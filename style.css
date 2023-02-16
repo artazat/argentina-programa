@@ -10,8 +10,357 @@
     font-family: 'Alata', sans-serif;
 }
 
+.grid-container {
+    min-width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+
+/* NAV */
+.navbar {
+    grid-area: header;
+    height: 100px;
+    background: rgb(234, 235, 238);
+    box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+}
+
+.nav-link {
+    transition: 0.5s;
+    margin-left: 2rem;
+}
+
+.nav-link:hover {
+    color: rgb(0, 64, 255);
+}
+
+.nombre-sergio {
+    padding-top: 0;
+    font-size: 35px;
+    margin-left: 1rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 1.5rem;
+    font-size: 20px;
+}
+
+
+
+/* SERGIO INFO */
+main{
+    grid-area: main;
+}
+
+.seccion1 {
+    background: url(./img/fondo5.jpg);
+    background-size: 210vh 18vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+.sergio-img {
+    width: 55%;
+    margin-left: 23rem;
+    margin-top: 5rem;
+    border-radius: 7px;
+    box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.46);
+}
+
+.info-div {
+    margin-top: 13rem;
+    margin-left: 7rem;
+}
+
+h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 650;
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.info-con-iconos {
+    margin-top: 5rem;
+    font-size: 20px;
+}
+
+.iconos-info {
+    color: rgb(1, 69, 255);
+    font-weight: 700;
+}
+
+
+/* "SOBRE MI" */
+.sobre-mi div {
+    margin-top: 15rem;
+    text-align: justify;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: 550;
+    margin-bottom: 0.5rem;
+}
+
+.sobre-mi div p {
+    font-size: 20px;
+}
+
+
+/* FORMACIÓN */
+.formacion {
+    margin-top: 20rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    background: #86c0d48a;
+    padding-top: 4.5rem;
+    padding-bottom: 5.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 45px;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.años {
+    font-size: 20px;
+}
+
+.parrafo-años {
+    margin-top: -1rem;
+}
+
+.los-años {
+    color: #3563e2;
+    font-size: 20px;
+}
+
+.año-uno {
+    border-right: 2px solid black;
+    padding-left: 5rem;
+    padding-right: 2rem;
+}
+
+.año-dos {
+    border-right: 2px solid black;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.año-tres {
+    padding-left: 2rem;
+    padding-right: 5rem;
+}
+
+
+/* GALERÍA */
+.galeria {
+    margin-top: 20rem;
+}
+
+h5 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes-galeria {
+    margin: auto;
+    margin-top: 2rem;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diseños-galeria {
+    height: 350px;
+    width: 550px;
+    object-fit: cover;
+}
+
+
+/* CONTACTO */
+.contacto {
+    background: rgba(90, 150, 198, 0.749);
+    margin-top: 20rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+h6 {
+    font-size: 45px;
+    padding-top: 1rem;
+}
+
+.info-contacto {
+    font-size: 25px;
+    padding-top: 5rem;
+    padding-left: 13rem;
+}
+
+.iconos-contacto {
+    color: #ffffff;
+}
+
+.links-contacto {
+    margin-top: 2rem;
+}
+
+.links-contacto a {
+    color: #ffffff;
+    font-size: 32px;
+    transition: 0.7s;
+}
+
+.links-contacto a:hover {
+    color: black;
+}
+
+.instagram {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+form {
+    padding-left: 3rem;
+}
+
+.inputs input {
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    display: flex;
+    transition: 0.3s;
+}
+
+.inputs input:hover,
+.inputs input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+}
+
+.inputs input:hover {
+    border-bottom: 3px solid rgb(115, 116, 117);
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+textarea {
+    border: 2px solid white;
+    background: none;
+    transition: 0.3s;
+}
+
+textarea:hover {
+    border: 3px solid rgb(115, 116, 117);
+}
+
+.botones-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.botones-form button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: rgba(6, 55, 80, 0.438);
+}
+
+.reset {
+    margin-right: 1rem;
+    border: 2px solid rgb(195, 99, 99);
+    color: white;
+    transition: 0.5s;
+}
+
+.reset:hover {
+    color: rgb(209, 45, 45);
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.438);
+}
+
+.submit {
+    border: 2px solid rgb(104, 159, 117);
+    color: white;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    color: rgb(13, 125, 39);
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.438);
+}
+
+
+footer {
+    margin-top: 3rem;
+    grid-area: footer;
+    background: rgb(234, 235, 238);
+}
+
+footer p{
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
 /* MOBILE FIRST (empiezo primero para celulares y luego lo adapto */
 @media screen and (max-width: 400px) {
+
+    /* NAV */
+    .navbar {
+        background: rgb(234, 235, 238);
+        box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+        -webkit-box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+    }
+
+    .icono-nav {
+        color: #3563e2;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+
     .nav-link {
         transition: 0.5s;
     }
@@ -20,51 +369,114 @@
         color: rgb(0, 64, 255);
     }
 
-    .nombre-sergio{
+    .nombre-sergio {
         padding-top: 0;
         font-size: 25px;
     }
 
+
+    /* SERGIO INFO */
     .sergio-img {
         width: 100%;
         margin: auto;
-        padding-top: 0.7rem;
+        padding-top: 0.8rem;
         padding-bottom: 0.5rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
         background: url(./img/planos.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
     }
 
-    .info-principal{
+    .info-principal {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    h1{
+    h1 {
         font-size: 40px;
     }
 
-    h2{
+    h2 {
         font-size: 25px;
     }
 
-    .info-con-iconos{
+    .info-con-iconos {
         margin-top: 1rem;
     }
 
-    .sobre-mi div{
-        display: flex;
-        flex-direction: column;
-        margin-top: 8rem;
+    .iconos-info {
+        color: rgb(1, 69, 255);
+        font-weight: 700;
     }
 
-    h3{
+
+    /* "SOBRE MI" */
+    .sobre-mi div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        text-align: justify;
+    }
+
+    h3 {
         font-size: 30px;
         font-weight: 550;
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* FORMACIÓN */
+    .formacion {
+        margin-top: 6rem;
+        background: #49c8f228;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: justify;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin-bottom: 0.5rem;
+    }
+
+    .años {
+        row-gap: 1.5rem;
+    }
+
+    .parrafo-años {
+        margin-top: -1rem;
+    }
+
+    .los-años {
+        color: #3563e2;
+        font-size: 18px;
+    }
+
+    .año-uno {
+        border-bottom: 2px solid black;
+    }
+
+    .año-dos {
+        border-bottom: 2px solid black;
+        padding-bottom: 12px;
+    }
+
+
+    /* GALERÍA */
+    .galeria {
+        margin-top: 6rem;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    .imagenes-galeria {
+        margin: auto;
+        row-gap: 1rem;
     }
 }
