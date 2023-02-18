@@ -70,11 +70,13 @@ main{
 .sergio-img {
     width: 55%;
     margin-left: 23rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: 7px;
     box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.46);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .info-div {
@@ -176,6 +178,9 @@ h4 {
 /* GALERÍA */
 .galeria {
     margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h5 {
@@ -214,12 +219,12 @@ h5 {
 
 h6 {
     font-size: 45px;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .info-contacto {
     font-size: 25px;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-left: 13rem;
 }
 
@@ -229,11 +234,12 @@ h6 {
 
 .links-contacto {
     margin-top: 2rem;
+    margin-left: 0.2rem;
 }
 
 .links-contacto a {
     color: #ffffff;
-    font-size: 32px;
+    font-size: 30px;
     transition: 0.7s;
 }
 
@@ -248,6 +254,8 @@ h6 {
 
 form {
     padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .inputs input {
@@ -272,7 +280,7 @@ textarea:focus {
 .textarea {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 textarea {
@@ -325,6 +333,36 @@ textarea:hover {
 }
 
 
+/* BOTON PARA SUBIR */
+.boton-arriba{
+    background: rgb(111, 177, 223);
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 4%;
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+.boton-arriba:hover{
+    transform: scale(1.1);
+    color: rgb(111, 177, 223);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(111, 177, 223);
+}
+
+
+/* FOOTER */
 footer {
     margin-top: 3rem;
     grid-area: footer;
@@ -335,6 +373,117 @@ footer p{
     margin-top: 0.7rem;
     margin-left: 1rem;
 }
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1869px) {
+    .info-div{
+        margin-top: 11rem;
+    }
+    .info-con-iconos{
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 1749px) {
+    .info-div{
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 1610px) {
+    .info-div{
+        margin-top: 9rem;
+        margin-left: 5rem;
+    }
+    .info-con-iconos{
+        margin-top: 5rem;
+    }
+    .sergio-img{
+        margin-left: 20rem;
+    }
+    .sobre-mi div{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+    .año-uno {
+        padding-left: 3rem;
+    }
+    
+    .año-dos {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .año-tres {
+        padding-right: 3rem;
+    }
+    .info-contacto{
+        padding-left: 10rem;
+    }
+    .input-email{
+        margin-left: 1rem;
+    }
+    textarea{
+        padding-right: 25rem;
+    }
+}
+
+
+@media screen and (max-width: 1510px) {
+    .sergio-img{
+        margin-left: 18rem;
+    }
+    .info-div{
+        margin-top: 8rem;
+        margin-left: 3rem;
+    }
+    .info-con-iconos{
+        margin-top: 3.5rem;
+    }
+    .info-contacto{
+        padding-left: 8rem;
+    }
+    .año-uno {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .año-dos {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .año-tres {
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+    .info-contacto{
+        padding-left: 6.5rem;
+    }
+    .botones-form{
+        margin-left: 25rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
