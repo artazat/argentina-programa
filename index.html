@@ -43,10 +43,10 @@
     </nav>
     <main class="container-fluid">
         <section class="seccion1 row">
-            <div class="div-sergioimg col-xxl-6 col-xs-6">
+            <div class="div-sergioimg col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-xs-6">
                 <img class="sergio-img" src="./img/sergio.jpg" alt="">
             </div>
-            <div class="info-principal col-xxl-6 col-xs-6">
+            <div class="info-principal col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-xs-6">
                 <div class="info-div">
                     <h1>Sergio Gomez</h1>
                     <h2>|Arquitecto|</h2>
@@ -99,24 +99,24 @@
         <section class="galeria" id="galeria">
             <h5 class="container">Galería</h5>
             <div class="imagenes-galeria container">
-                <div class="row">
-                    <img src="./img/plano4.jpg" alt="" class="diseños-galeria col-xxl-6">
-                    <img src="./img/plano5.jpg" alt="" class="diseños-galeria col-xxl-6">
+                <div class="las-imagenes">
+                    <img src="./img/plano4.jpg" alt="" class="diseños-galeria" id="diseño-uno">
+                    <img src="./img/plano5.jpg" alt="" class="diseños-galeria" id="diseño-dos">
                 </div>
-                <div class="row">
-                    <img src="./img/plano3.jpg" alt="" class="diseños-galeria col-xxl-6">
-                    <img src="./img/plano2.jpg" alt="" class="diseños-galeria col-xxl-6">
+                <div class="las-imagenes">
+                    <img src="./img/plano3.jpg" alt="" class="diseños-galeria" id="diseño-uno">
+                    <img src="./img/plano2.jpg" alt="" class="diseños-galeria" id="diseño-dos">
                 </div>
-                <div class="row">
-                    <img src="./img/plano1.webp" alt="" class="diseños-galeria col-xxl-6">
-                    <img src="./img/plano6.webp" alt="" class="diseños-galeria col-xxl-6">
+                <div class="las-imagenes">
+                    <img src="./img/plano1.webp" alt="" class="diseños-galeria" id="diseño-uno">
+                    <img src="./img/plano6.webp" alt="" class="diseños-galeria" id="diseño-dos">
                 </div>
             </div>
         </section>
         <section class="contacto" id="contacto">
             <h6>Contacto</h6>
-            <div class="row">
-                <div class="info-contacto col-xxl-6">
+            <div class="contacto-all">
+                <div class="info-contacto">
                     <p><i class="iconos-contacto bi bi-envelope-at"></i> | gomezsergio@gmail.com</p>
                     <p><i class="iconos-contacto bi bi-telephone"></i> | 351 927 1345</p>
                     <div class="links-contacto">
@@ -125,20 +125,22 @@
                         <a href="#"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
-                <div class="formulario col-xxl-6">
+                <div class="formulario">
                     <form>
-                        <div class="inputs row">
-                            <div class="input-nombre col-xxl-4">
-                                <label for="nombre">Nombre y Apellido</label>
-                                <input type="text" name="nombre" required />
+                        <div class="inputs">
+                            <div class="nombre-email">
+                                <div class="input-nombre">
+                                    <label for="nombre">Nombre y Apellido</label>
+                                    <input type="text" name="nombre" required />
+                                </div>
+                                <div class="input-email">
+                                    <label for="email">Correo electronico</label>
+                                    <input type="email" name="email" required>
+                                </div>
                             </div>
-                            <div class="input-email col-xxl-4">
-                                <label for="email">Correo electronico</label>
-                                <input type="email" name="email" required>
-                            </div>
-                            <div class="textarea col-xxl-8">
+                            <div class="textarea">
                                 <label for="textarea">Asunto</label>
-                                <textarea name="textarea" cols="2" rows="7" required></textarea>
+                                <textarea name="textarea" cols="60" rows="8" required></textarea>
                                 <div class="botones-form">
                                     <button type="reset" class="reset">Restablecer</button>
                                     <button type="submit" class="submit">Enviar</button>

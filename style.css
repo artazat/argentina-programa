@@ -55,7 +55,7 @@
 
 
 /* SERGIO INFO */
-main{
+main {
     grid-area: main;
 }
 
@@ -189,10 +189,13 @@ h5 {
     justify-content: center;
 }
 
+.las-imagenes {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
 .imagenes-galeria {
-    margin: auto;
     margin-top: 2rem;
-    row-gap: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,6 +205,14 @@ h5 {
     height: 350px;
     width: 550px;
     object-fit: cover;
+}
+
+#diseño-uno {
+    margin-right: 1.5rem;
+}
+
+#diseño-dos {
+    margin-left: 1.5rem;
 }
 
 
@@ -222,10 +233,15 @@ h6 {
     padding-top: 2rem;
 }
 
+.contacto-all {
+    display: flex;
+    justify-content: space-around;
+}
+
 .info-contacto {
     font-size: 25px;
     padding-top: 4rem;
-    padding-left: 13rem;
+    margin-left: 5rem;
 }
 
 .iconos-contacto {
@@ -252,8 +268,8 @@ h6 {
     margin-right: 0.7rem;
 }
 
-form {
-    padding-left: 3rem;
+.formulario {
+    margin-right: 3rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -263,6 +279,7 @@ form {
     background: none;
     border-bottom: 2px solid white;
     display: flex;
+    flex-direction: column;
     transition: 0.3s;
 }
 
@@ -275,6 +292,11 @@ textarea:focus {
 
 .inputs input:hover {
     border-bottom: 3px solid rgb(115, 116, 117);
+}
+
+.nombre-email {
+    display: flex;
+    justify-content: space-between;
 }
 
 .textarea {
@@ -334,9 +356,12 @@ textarea:hover {
 
 
 /* BOTON PARA SUBIR */
-.boton-arriba{
+.boton-arriba {
     background: rgb(111, 177, 223);
     border-radius: 50% 50% 50% 50%;
+    box-shadow: 0px -1px 24px -5px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 0px -1px 24px -5px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px -1px 24px -5px rgba(0,0,0,0.37);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,10 +376,10 @@ textarea:hover {
     font-weight: 700;
     font-size: 30px;
     cursor: pointer;
-    transition:0.5s;
+    transition: 0.5s;
 }
 
-.boton-arriba:hover{
+.boton-arriba:hover {
     transform: scale(1.1);
     color: rgb(111, 177, 223);
     background: rgb(255, 255, 255);
@@ -369,7 +394,7 @@ footer {
     background: rgb(234, 235, 238);
 }
 
-footer p{
+footer p {
     margin-top: 0.7rem;
     margin-left: 1rem;
 }
@@ -381,98 +406,304 @@ footer p{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1869px) {
-    .info-div{
+    .info-div {
         margin-top: 11rem;
     }
-    .info-con-iconos{
+
+    .info-con-iconos {
         margin-top: 6rem;
     }
 }
 
 @media screen and (max-width: 1749px) {
-    .info-div{
+    .info-div {
         margin-top: 10rem;
     }
 }
 
 @media screen and (max-width: 1610px) {
-    .info-div{
+    .info-div {
         margin-top: 9rem;
         margin-left: 5rem;
     }
-    .info-con-iconos{
+
+    .info-con-iconos {
         margin-top: 5rem;
     }
-    .sergio-img{
+
+    .sergio-img {
         margin-left: 20rem;
     }
-    .sobre-mi div{
+
+    .sobre-mi div {
         padding-left: 15rem;
         padding-right: 15rem;
     }
+
     .año-uno {
         padding-left: 3rem;
     }
-    
+
     .año-dos {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    
+
     .año-tres {
         padding-right: 3rem;
-    }
-    .info-contacto{
-        padding-left: 10rem;
-    }
-    .input-email{
-        margin-left: 1rem;
-    }
-    textarea{
-        padding-right: 25rem;
     }
 }
 
 
 @media screen and (max-width: 1510px) {
-    .sergio-img{
+    .sergio-img {
         margin-left: 18rem;
     }
-    .info-div{
+
+    .info-div {
         margin-top: 8rem;
         margin-left: 3rem;
     }
-    .info-con-iconos{
+
+    .info-con-iconos {
         margin-top: 3.5rem;
     }
-    .info-contacto{
-        padding-left: 8rem;
-    }
+
     .año-uno {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     .año-dos {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     .año-tres {
         padding-right: 2rem;
         padding-left: 1rem;
     }
-    .info-contacto{
-        padding-left: 6.5rem;
+}
+
+@media screen and (max-width: 1399px) {
+    .sergio-img {
+        margin-left: 16.5rem;
     }
-    .botones-form{
-        margin-left: 25rem;
+
+    .info-div {
+        margin-top: 7.5rem;
+        margin-left: 1.5rem;
+    }
+
+    h4 {
+        padding-bottom: 1.5rem;
+    }
+
+    .años {
+        justify-content: center;
+    }
+
+    .año-uno {
+        border-right: none;
+        padding: 0;
+    }
+
+    .año-dos {
+        border-right: none;
+        padding: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 0.7rem;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        width: 70%;
+    }
+
+    .año-tres {
+        padding: 0;
+    }
+
+    .info-contacto {
+        margin-left: 0;
+    }
+
+    .formulario {
+        margin-right: 0;
+    }
+
+    .diseños-galeria {
+        height: 250px;
+        width: 450px;
+    }
+
+    .las-imagenes {
+        margin-bottom: 2rem;
+    }
+
+    #diseño-uno {
+        margin-right: 1rem;
+    }
+
+    #diseño-dos {
+        margin-left: 1rem;
     }
 }
 
+@media screen and (max-width: 1390px) {
+    .sergio-img {
+        margin-left: 18.5rem;
+    }
 
+    .info-div {
+        margin-top: 7rem;
+    }
 
+    .info-con-iconos {
+        margin-top: 3rem;
+    }
+}
 
+@media screen and (max-width: 1320px) {
+    .sergio-img {
+        margin-left: 17rem;
+    }
+
+    .info-div {
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .sergio-img {
+        margin-left: 16rem;
+    }
+
+    .info-div {
+        margin-top: 5.5rem;
+        margin-left: 1rem;
+    }
+
+    .contacto-all {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .info-contacto {
+        padding: 0;
+        margin-top: 3.5rem;
+    }
+
+    .formulario {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sergio-img {
+        margin-left: 13rem;
+    }
+
+    .info-div {
+        margin-top: 5rem;
+    }
+
+    .info-con-iconos {
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .sergio-img {
+        margin-left: 12.5rem;
+    }
+
+    .info-div {
+        margin-left: 0.5rem;
+    }
+
+    .info-con-iconos {
+        margin-top: 2rem;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 42px;
+    }
+
+    h4 {
+        font-size: 42px;
+    }
+
+    h5 {
+        font-size: 42px;
+    }
+
+    h6 {
+        font-size: 42px;
+    }
+
+    .sobre-mi div p {
+        font-size: 18px;
+    }
+
+    .años {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .sergio-img {
+        margin-left: 12.5rem;
+    }
+
+    .info-div {
+        margin-top: 4.5rem;
+        margin-left: 0.5rem;
+    }
+    
+    .info-con-iconos {
+        margin-top: 2rem;
+    }
+    .sobre-mi div{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .diseños-galeria {
+        height: 220px;
+        width: 420px;
+    }
+    .las-imagenes {
+        margin-bottom: 1rem;
+    }
+    #diseño-uno {
+        margin-right: 0.5rem;
+    }
+    #diseño-dos {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .sergio-img{
+        margin-left: 10rem;
+    }
+    .info-div{
+        margin-top: 3.5rem;
+        margin-left: 0;
+    }
+    .formacion{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
 
 
 
