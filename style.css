@@ -897,6 +897,16 @@ footer p {
         padding-right: 2rem;
     }
 
+    .formacion{
+        margin-left: -0.7rem;
+        margin-right: -0.7rem;
+    }
+
+    .contacto{
+        margin-left: -0.7rem;
+        margin-right: -0.7rem;
+    }
+
     .anio-uno,
     .anio-dos,
     .anio-tres {
