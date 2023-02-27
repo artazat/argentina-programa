@@ -11,7 +11,7 @@
 }
 
 .grid-container {
-    min-width: 100vh;
+    min-width: 50vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
@@ -81,7 +81,7 @@ main {
 
 .info-div {
     margin-top: 13rem;
-    margin-left: 7rem;
+    margin-left: 4rem;
 }
 
 h1 {
@@ -97,7 +97,7 @@ h2 {
 
 .info-con-iconos {
     margin-top: 5rem;
-    font-size: 20px;
+    font-size: 20.5px;
 }
 
 .iconos-info {
@@ -110,8 +110,8 @@ h2 {
 .sobre-mi div {
     margin-top: 15rem;
     text-align: justify;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
 }
 
 h3 {
@@ -144,32 +144,32 @@ h4 {
     justify-content: center;
 }
 
-.años {
+.anios {
     font-size: 20px;
 }
 
-.parrafo-años {
+.parrafo-anios {
     margin-top: -1rem;
 }
 
-.los-años {
+.los-anios {
     color: #3563e2;
     font-size: 20px;
 }
 
-.año-uno {
+.anio-uno {
     border-right: 2px solid black;
     padding-left: 5rem;
     padding-right: 2rem;
 }
 
-.año-dos {
+.anio-dos {
     border-right: 2px solid black;
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
-.año-tres {
+.anio-tres {
     padding-left: 2rem;
     padding-right: 5rem;
 }
@@ -201,17 +201,17 @@ h5 {
     align-items: center;
 }
 
-.diseños-galeria {
+.disenios-galeria {
     height: 350px;
     width: 550px;
     object-fit: cover;
 }
 
-#diseño-uno {
+#disenio-uno {
     margin-right: 1.5rem;
 }
 
-#diseño-dos {
+#disenio-dos {
     margin-left: 1.5rem;
 }
 
@@ -228,18 +228,20 @@ h5 {
 
 h6 {
     font-size: 45px;
-    padding-top: 2rem;
-    padding-left: 10rem;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 .contacto-all {
+    margin-top: 4rem;
     display: flex;
     justify-content: space-around;
 }
 
 .info-contacto {
     font-size: 25px;
-    padding-top: 4rem;
+    padding-top: 7rem;
     margin-left: 5rem;
 }
 
@@ -268,15 +270,16 @@ h6 {
 }
 
 .formulario {
-    margin-right: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
 .inputs input {
     border: none;
     background: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #ffffff;
     display: flex;
     flex-direction: column;
     transition: 0.3s;
@@ -290,7 +293,7 @@ textarea:focus {
 }
 
 .inputs input:hover {
-    border-bottom: 3px solid rgb(115, 116, 117);
+    border-bottom: 2px solid rgb(115, 116, 117);
 }
 
 .nombre-email {
@@ -311,7 +314,7 @@ textarea {
 }
 
 textarea:hover {
-    border: 3px solid rgb(115, 116, 117);
+    border: 2px solid rgb(115, 116, 117);
 }
 
 .botones-form {
@@ -386,6 +389,7 @@ textarea:hover {
 }
 
 
+
 /* FOOTER */
 footer {
     margin-top: 3rem;
@@ -441,16 +445,16 @@ footer p {
         padding-right: 15rem;
     }
 
-    .año-uno {
+    .anio-uno {
         padding-left: 3rem;
     }
 
-    .año-dos {
+    .anio-dos {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    .año-tres {
+    .anio-tres {
         padding-right: 3rem;
     }
 }
@@ -470,19 +474,38 @@ footer p {
         margin-top: 3.5rem;
     }
 
-    .año-uno {
+    .anio-uno {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .año-dos {
+    .anio-dos {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .año-tres {
+    .anio-tres {
         padding-right: 2rem;
         padding-left: 1rem;
+    }
+
+    .contacto-all {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .info-contacto {
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .links-contacto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario {
+        margin-top: 7rem;
     }
 }
 
@@ -501,16 +524,16 @@ footer p {
         padding-bottom: 1.5rem;
     }
 
-    .años {
+    .anios {
         justify-content: center;
     }
 
-    .año-uno {
+    .anio-uno {
         border-right: none;
         padding: 0;
     }
 
-    .año-dos {
+    .anio-dos {
         border-right: none;
         padding: 0;
         margin-top: 0.5rem;
@@ -522,19 +545,15 @@ footer p {
         width: 70%;
     }
 
-    .año-tres {
+    .anio-tres {
         padding: 0;
-    }
-
-    .info-contacto {
-        margin-left: 0;
     }
 
     .formulario {
         margin-right: 0;
     }
 
-    .diseños-galeria {
+    .disenios-galeria {
         height: 250px;
         width: 450px;
     }
@@ -543,11 +562,11 @@ footer p {
         margin-bottom: 2rem;
     }
 
-    #diseño-uno {
+    #disenio-uno {
         margin-right: 1rem;
     }
 
-    #diseño-dos {
+    #disenio-dos {
         margin-left: 1rem;
     }
 }
@@ -589,14 +608,8 @@ footer p {
         margin-left: 1rem;
     }
 
-    .contacto-all {
-        flex-direction: column;
-        align-items: center
-    }
-
     .info-contacto {
         padding: 0;
-        margin-top: 3.5rem;
     }
 
     .formulario {
@@ -661,7 +674,7 @@ footer p {
         font-size: 18px;
     }
 
-    .años {
+    .anios {
         font-size: 18px;
     }
 }
@@ -686,7 +699,7 @@ footer p {
         padding-right: 8rem;
     }
 
-    .diseños-galeria {
+    .disenios-galeria {
         height: 220px;
         width: 420px;
     }
@@ -695,12 +708,16 @@ footer p {
         margin-bottom: 1rem;
     }
 
-    #diseño-uno {
+    #disenio-uno {
         margin-right: 0.5rem;
     }
 
-    #diseño-dos {
+    #disenio-dos {
         margin-left: 0.5rem;
+    }
+
+    .formulario {
+        font-size: 18px;
     }
 }
 
@@ -794,19 +811,20 @@ footer p {
 
     .las-imagenes {
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin: 0;
     }
 
-    #diseño-uno {
+    #disenio-uno {
         margin-right: 0;
         margin-bottom: 1.5rem;
     }
 
-    #diseño-dos {
+    #disenio-dos {
         margin-left: 0;
+        margin-bottom: 1.5rem;
     }
 
-    .diseños-galeria {
+    .disenios-galeria {
         height: 350px;
         width: 550px;
     }
@@ -815,107 +833,186 @@ footer p {
         margin-left: 0;
         margin-right: 0;
     }
-
-    h6 {
-        padding-left: 5rem;
-    }
 }
 
 
-@media screen and (max-width: 900px){
-    .sobre-mi div{
+@media screen and (max-width: 900px) {
+    .sobre-mi div {
         padding-left: 5rem;
         padding-right: 5rem;
     }
 
-    .info-contacto{
-        margin-top: 3rem;
-    }
-
-    .formulario{
+    .formulario {
         margin-top: 5.5rem;
     }
 }
 
 
-@media screen and (max-width: 800px){
-    .sobre-mi div{
+@media screen and (max-width: 800px) {
+    .sobre-mi div {
         padding-left: 4.4rem;
         padding-right: 4.4rem;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MOBILE FIRST (empiezo primero para celulares y luego lo adapto */
-@media screen and (max-width: 400px) {
-
-    /* NAV */
-    .navbar {
-        background: rgb(234, 235, 238);
-        box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
-        -webkit-box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
-        -moz-box-shadow: -1px 5px 6px -1px rgba(0, 0, 0, 0.64);
+@media screen and (max-width: 767px) {
+    .sobre-mi div p {
+        font-size: 20px;
     }
 
-    .icono-nav {
-        color: #3563e2;
-        font-size: 30px;
-        font-weight: 500;
+    .los-anios {
+        font-size: 18.5px;
     }
 
-
-    .nav-link {
-        transition: 0.5s;
+    .parrafo-anios {
+        font-size: 20px;
     }
 
-    .nav-link:hover {
-        color: rgb(0, 64, 255);
+    .formulario {
+        font-size: 18px;
     }
 
-    .nombre-sergio {
-        padding-top: 0;
-        font-size: 25px;
+    footer {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .seccion1 {
+        background-size: 210vh 30vw;
     }
 
-
-    /* SERGIO INFO */
     .sergio-img {
-        width: 100%;
-        margin: auto;
-        padding-top: 0.8rem;
-        padding-bottom: 0.5rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
-        background: url(./img/planos.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        width: 60%;
     }
 
-    .info-principal {
-        margin-top: 1rem;
+    .info-con-iconos {
+        font-size: 23.5px;
+    }
+
+    .sobre-mi div {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .anio-uno,
+    .anio-dos,
+    .anio-tres {
+        text-align: justify;
+    }
+
+    .anio-dos {
+        width: 100%;
+    }
+
+    .formulario {
+        font-size: 17px;
+    }
+
+    .disenios-galeria {
+        height: 250px;
+        width: 450px;
+    }
+
+    .info-contacto {
+        font-size: 22px;
+    }
+
+    .links-contacto {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .boton-arriba {
+        font-size: 25px;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .sobre-mi div p {
+        font-size: 18px;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    h5 {
+        font-size: 35px;
+    }
+
+    h6 {
+        font-size: 35px;
+    }
+
+    .info-con-iconos {
+        font-size: 22px;
+    }
+
+    .los-anios {
+        font-size: 17px;
+    }
+
+    .parrafo-anios {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .nombre-sergio {
+        font-size: 32px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .nombre-email {
+        flex-direction: column;
+    }
+
+    .input-nombre input,
+    .input-email input {
+        padding-right: 10rem;
+    }
+
+    .input-email {
+        margin-top: 2rem;
+    }
+
+    textarea {
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sergio-img {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 45px;
     }
 
     h2 {
@@ -923,78 +1020,68 @@ footer p {
     }
 
     .info-con-iconos {
-        margin-top: 1rem;
-    }
-
-    .iconos-info {
-        color: rgb(1, 69, 255);
-        font-weight: 700;
-    }
-
-
-    /* "SOBRE MI" */
-    .sobre-mi div {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5rem;
-        text-align: justify;
+        font-size: 19px;
     }
 
     h3 {
         font-size: 30px;
-        font-weight: 550;
-        margin-bottom: 0.5rem;
     }
 
-
-    /* FORMACIÓN */
-    .formacion {
-        margin-top: 6rem;
-        background: #49c8f228;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: justify;
+    .sobre-mi div p {
+        font-size: 16px;
     }
 
     h4 {
         font-size: 30px;
-        margin-bottom: 0.5rem;
     }
 
-    .años {
-        row-gap: 1.5rem;
-    }
-
-    .parrafo-años {
-        margin-top: -1rem;
-    }
-
-    .los-años {
-        color: #3563e2;
-        font-size: 18px;
-    }
-
-    .año-uno {
-        border-bottom: 2px solid black;
-    }
-
-    .año-dos {
-        border-bottom: 2px solid black;
-        padding-bottom: 12px;
-    }
-
-
-    /* GALERÍA */
-    .galeria {
-        margin-top: 6rem;
+    .parrafo-anios {
+        font-size: 16px;
     }
 
     h5 {
         font-size: 30px;
     }
 
-    .imagenes-galeria {
-        margin: auto;
-        row-gap: 1rem;
+    .disenios-galeria {
+        height: 200px;
+        width: 350px;
+    }
+
+    h6 {
+        font-size: 30px;
+    }
+
+    .info-contacto {
+        font-size: 20px;
+    }
+
+    .formulario {
+        font-size: 15px;
+    }
+
+    textarea {
+        height: 250px;
+        width: 350px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .boton-arriba {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .seccion1 {
+        background-size: 210vh 35vw;
+    }
+
+    .sergio-img {
+        margin-top: 2rem;
+        width: 85%;
     }
 }
